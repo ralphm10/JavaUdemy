@@ -22,13 +22,11 @@ public class Main {
             if(isPrime(i)) {
                 primeCount ++;
                 System.out.println(i + " is a prime number");
+                if(primeCount == 3) {
+                    break;
+                }
             }
-            if(primeCount == 3) {
-                break;
-            }
-
         }
-
     }
 
     public static boolean isPrime(int n) {
